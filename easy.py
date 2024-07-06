@@ -1,7 +1,4 @@
+import sys
 while True:
-    y = input("input number:  ")
-    y = y.lower().replace("illion", "o")
-    x = input("input number:  ")
-    x = x.lower().replace("illion", "o")
-    
-    print(f"centinoni{x}-decinoni{x}-noni{x}-centinoni{y}-decinoni{y}-noni{y}-")
+    sys.set_int_max_str_digits(2*10**9)
+    print(eval(input()))
